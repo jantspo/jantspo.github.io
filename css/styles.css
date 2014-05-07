@@ -2,7 +2,14 @@ html{
 	height:100%;
 }
 body {
-	background: url(../images/beachop.JPG) no-repeat;
+	background: url(../images/beach.JPG) no-repeat;
+	background-size:100% 110%;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+body#news_page {
+	background: url(../images/beach2.jpeg) no-repeat;
 	background-size:100% 110%;
 	height: 100%;
 	width: 100%;
@@ -15,7 +22,7 @@ main{
 	width: 100%;
 	min-height: 87%;
 }
-article {
+article{
 	background-color: #FFF;
 	margin-top: 35%;
 	padding: 0.5% 2%;
