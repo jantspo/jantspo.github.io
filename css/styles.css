@@ -93,7 +93,7 @@ footer{
 footer ul#social_links{
 	float:left;
 	margin: 0;
-	padding: .15% 0 0;
+	padding:0;
 	background-color: #fff;
 }
 footer ul#social_links li{
