@@ -189,8 +189,8 @@ background-color: #FFF;
 @media screen and (max-width: 480px){
 	body {
 		background: url(../images/beach.jpeg) no-repeat;
-		background-size: 100% 110%;
-		background:#bdc2c6;
+		background-size: 320px 480px;
+		/*background:#bdc2c6;*/
 	}
 	.navbar-brand {
 		padding: 15px 0 !important;
