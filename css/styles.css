@@ -17,7 +17,7 @@ main{
 }
 article{
 	background-color: #FFF;
-	margin-top: 35%;
+/*	margin-top: 35%;*/
 	padding: 0.5% 2%;
 	border-radius: 5px;
 }
@@ -33,7 +33,13 @@ article#main_page p{
 	margin:0;
 }
 article#news {
-	margin-top: 30%;
+/*	margin-top: 30%;*/
+	top:32%;
+	position: absolute;
+}
+.center{
+	height: 100%;
+	position: absolute;
 }
 article#about{
 	margin:20% 1% 0 0;
@@ -199,8 +205,9 @@ footer p#copyright{
 	}
 	main{
 		height:auto;
+		min-height: 0%;
 		background: url(../images/beach.jpeg) no-repeat;
-		background-size:100% 110%;
+		/*background-size:100% 110%;*/
 	}
 	article#main_page {
 		padding: 0;
