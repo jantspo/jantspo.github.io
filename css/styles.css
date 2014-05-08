@@ -199,7 +199,7 @@ footer p#copyright{
 	}
 	main{
 		height:auto;
-		background: url(../images/beachop.JPG) no-repeat;
+		background: url(../images/beach.jpeg) no-repeat;
 		background-size:100% 110%;
 	}
 	article#main_page {
@@ -212,7 +212,7 @@ footer p#copyright{
 	}
 	article{
 		padding: 0;
-		margin: 11% 0 0;
+		margin: 0 0  !important;
 	}
 	article h2,p{
 		padding:0 5% 0;
