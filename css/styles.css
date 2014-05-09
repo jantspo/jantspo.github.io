@@ -192,9 +192,9 @@ footer p#copyright{
 	color: #bbb;
 	background-color: #fff;
 	border-bottom-right-radius: 15px;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 5px;
-	border-bottom-left-radius: 5px;
+	border-top-left-radius: 1px;
+	border-top-right-radius: 1px;
+	border-bottom-left-radius: 15px;
 }
 .navbar-default .navbar-brand {
 	color: #eee;
@@ -331,7 +331,5 @@ footer p#copyright{
 	footer ul#social_links {
 		padding-left:0; 
 		margin-left:0;
-	}
-
-	
+	}	
 }
