@@ -237,6 +237,14 @@ footer p#copyright{
 	.pure-u-1-2, .pure-u-12-24 {
 		width: 100%;
 	}
+	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+		color: #bbb;
+		background-color: #fff;
+		border-bottom-right-radius: 0;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		border-bottom-left-radius: 0;
+	}
 	main{
 		height:auto;
 		min-height: 0%;
