@@ -1,67 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="John Sposato's Portfolio Page" content="Personal page for an aspiring web developer.">
-	<title>John Sposato's Web Portfolio Site</title>
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> 
-	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
-	<link href='http://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Amaranth:700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<header>
-		<nav class="navbar navbar-default" role="navigation">
-		  <div class="container-fluid">
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <a class="navbar-brand" href="index.html">JoSpo</a>
-		    </div>
+	<div id="fullpage">
+	    <div class="section" id="slide1">
+	    	<div id="intro">
+		    	<h1>JS</h1>
+		    	<h2>John Sposato</h2>
+		    	<h3>Web Developer</h3>
+	    	</div>
+	    </div>
+	    <div class="section" id="slide2">
+	    	<div id="about">
+	    		<h2>About</h2>
+	    		<p>My name is John Sposato and I'm a web developer living in the Californian Central Valley.</p>
+	    	</div>
+	    </div>
+	    <div class="section" id="slide3">
+	    	<div id="experience">
+				<a id="go" href="#geekwise" rel="leanModal">Geekwise Courses</a>
+				<a id="go" href="#teaching" rel='leanModal'>Teaching Assistant</a>
+	    	</div>
+	    </div>
+	    <div class="section" id="slide4">
+	    	<div id="contact">
+	    		
+	    	</div>
+	    </div>
+	</div>
+	
+	<div id="geekwise">
+		<p>Bootcamp 1 - </p>
+		<p>Bootcamp 2- </p>
+		<p>Javacript 1 -</p>
+		<p>Javascript 2</p>
+	</div>
+	<div id="teaching">
+		<p>I have been a teaching assistant for the Bootcamp 2 course at Geekwise adn will be returning to t.a. again in the next round of courses.</p>	
+	</div>
 
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav">
-		        <li><a href="pages/news.html">News</a></li>
-		        <li><a href="pages/about.html">About</a></li>
-		        <li><a href="pages/goals.html">Goals</a></li>
-		        <li><a href="pages/links.html">Links</a></li>
-		        <li><a href="pages/contact.html">Contact</a></li>
-		      </ul><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav>
-	</header>
-	<main id="main_page">
-		<div class="pure-g-r"></div>
-			<div class="pure-u-1-4"></div>
-			<div class="pure-u-1-2">
-				<article id="main_page">
-					<p>Imagine. Design.</p>
-					<p>Build. Enjoy.</p>
-				</article>
-			</div>
-			<div class="pure-u-1-4"></div>
-		</div>
-	</main>
-	<footer class="clear">
-		<ul id="social_links">
-            <li><a target="_blank" href="">Facebook</a></li>
-            <li><a target="_blank" href="https://twitter.com/jspowebdev/">Twitter</a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/pub/john-sposato/15/4b8/384/">LinkedIn</a></li>
-            <li><a href="mailto:jsposatowebdev@gmail.com">jsposatowebdev@gmail.com</a></li>
-		</ul>
-		<p id="copyright">Copyright 2014. All rights reserved.</p>
-	</footer>
-
-	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-	<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-	<!--<script type="text/javascript" scr="bootstrap.min.js"></script>-->
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="vendor/jquery.easings.min.js"></script>
+	<script src="vendor/jquery.slimscroll.min.js"></script>
+	<script src="vendor/jquery.fullPage.js"></script>
+	<script src="vendor/jquery.leanModal.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $('#fullpage').fullpage();
+		});
+	</script>
+	<script type="text/javascript">
+		$(function() {
+			$('a[rel*=leanModal]').leanModal({ top : 200, closeButton: ".modal_close"});
+		});
+	</script>	
 </body>
 </html>
