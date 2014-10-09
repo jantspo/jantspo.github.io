@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Document</title>
+	<title>John Sposato</title>
 	<link rel="stylesheet" href="css/jquery.fullPage.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
@@ -11,38 +10,21 @@
 	<div id="fullpage">
 	    <div class="section" id="slide1">
 	    	<div id="intro">
-	    		<div>
-			    	<h1>JS</h1>
-			    	<h2>John Sposato</h2>
-			    	<h3>Web Developer</h3>
-		    	</div>
+		    	<h1>JS</h1>
+		    	<h2>John Sposato</h2>
+		    	<h3>Web Developer</h3>
 	    	</div>
 	    </div>
 	    <div class="section" id="slide2">
 	    	<div id="about">
-	    		<div>
-		    		<h2>About</h2>
-		    		<p>My name is John Sposato and I'm a web developer living in the Californian Central Valley.</p>
-	    		</div>	
+	    		<h2>About</h2>
+	    		<p>My name is John Sposato and I'm a web developer living in the Californian Central Valley.</p>
 	    	</div>
 	    </div>
 	    <div class="section" id="slide3">
 	    	<div id="experience">
-	    		<div id="wrapper">
-	    			<div id="courses">
-	    				<h2>Geekwise Courses</h2>
-						<ul>
-							<li>Bootcamp 1</li>
-							<li>Bootcamp 2</li>
-							<li>Javascript 1</li>
-							<li>Javascript 2</li>
-						</ul>	    				
-	    			</div>
-	    			<div id="teaching">
-	    				<h2>Teaching Assistant</h2>
-	    				<p>I assisted in the Bootcamp 2 course and will be returning to help again in the upcoming course.</p>
-	    			</div>
-	    		</div>
+				<a id="go" href="#geekwise" rel="leanModal">Geekwise Courses</a>
+				<a id="go" href="#teaching" rel='leanModal'>Teaching Assistant</a>
 	    	</div>
 	    </div>
 	    <div class="section" id="slide4">
@@ -52,15 +34,30 @@
 	    </div>
 	</div>
 	
+	<div id="geekwise">
+		<p>Bootcamp 1 - </p>
+		<p>Bootcamp 2- </p>
+		<p>Javacript 1 -</p>
+		<p>Javascript 2</p>
+	</div>
+	<div id="teaching">
+		<p>I have been a teaching assistant for the Bootcamp 2 course at Geekwise adn will be returning to t.a. again in the next round of courses.</p>	
+	</div>
+
 	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="vendor/jquery.easings.min.js"></script>
 	<script src="vendor/jquery.slimscroll.min.js"></script>
 	<script src="vendor/jquery.fullPage.js"></script>
+	<script src="vendor/jquery.leanModal.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 		    $('#fullpage').fullpage();
 		});
 	</script>
-
+	<script type="text/javascript">
+		$(function() {
+			$('a[rel*=leanModal]').leanModal({ top : 200, closeButton: ".modal_close"});
+		});
+	</script>	
 </body>
 </html>

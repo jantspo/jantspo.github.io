@@ -2,13 +2,13 @@
 	padding:0;
 	margin:0;
 	font-family:helvetica, sans-serif;
-	box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-o-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
 }
 html{
-	background: url(../images/beach.jpeg);		
+	background: url(../images/beach.jpeg)no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 #slide1{
 }
@@ -21,11 +21,15 @@ html{
 	height: 75%;
 	background: #111;
 	color:#fff;
-	opacity:.65;
+	opacity:.5;
+	text-align: center;
 }
 h1{
 	font-size: 3.5em;
+	padding-top: 15%;
+	text-align: center;
 	font: #000;
+	border-radius: 50%;
 }
 #slide2{
 	background: url(../images/beach2.jpeg)no-repeat center center fixed;
@@ -33,35 +37,54 @@ h1{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-
 }
 #about{
 	background: #111;
-	opacity:.65;
+	opacity:.75;
 	color:#fff;
 	height:50%;
+	text-align: center;
 }
 #about h2{
-
+	padding-top: 10%;
 }
 #slide3 div#experience{
 	background: #111;
-	opacity:.65;
+	opacity:.75;
 	color:#fff;
 	height:50%;
+	text-align: center;
 }
-#wrapper{
-	width:60%;
-	margin: 0 auto;
+#slide4{
+	background: url(../images/beach2.jpeg)no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
-#courses{
-	float:left;
-	width: 50%;
-	padding:1%;
+
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    display: none;background: #000;
+}
+#geekwise{
+	display: none;
+    background: #111;
+    width:600px;
+    height:15%;
+    padding: 1%;
+    color: #fff;
 }
 #teaching{
-	float:right;
-	width: 50%;
+	display:none;
+	background: #111;
+	width:600px;
+	height:15%;
+	color:#fff;
 	padding:1%;
 }
-#slide4
