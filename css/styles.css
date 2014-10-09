@@ -105,3 +105,9 @@ p{
 	padding:1%;
 	float: right;
 }
+
+@media and (max-width: 480px){
+	h1, h2, h3, p{
+		font-size: 1em;
+	}
+}
