@@ -41,11 +41,7 @@ body{
 	background: #111;
 	opacity:.65;
 	color:#fff;
-	height:50%;
 	text-align: center;
-}
-#about h2{
-	padding-top: 10%;
 }
 #slide3 div#experience{
 	background: #111;
@@ -65,11 +61,10 @@ body{
 	background: #111;
 	opacity:.65;
 	color:#fff;
-	height:50%;
 	text-align: center;
 }
 #padding{
-	padding: 8%;
+	padding: 1%;
 }
 a{
 	text-decoration: none;
