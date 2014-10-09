@@ -6,6 +6,7 @@
 	-o-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
+	line-height: 1.25em;
 }
 html{
 	background: url(../images/beach.jpeg)no-repeat center center fixed;
@@ -25,7 +26,7 @@ html{
 	height: 75%;
 	background: #111;
 	color:#fff;
-	opacity:.5;
+	opacity:.65;
 	text-align: center;
 }
 h1{
@@ -44,7 +45,7 @@ h1{
 }
 #about{
 	background: #111;
-	opacity:.75;
+	opacity:.65;
 	color:#fff;
 	height:50%;
 	text-align: center;
@@ -54,11 +55,12 @@ h1{
 }
 #slide3 div#experience{
 	background: #111;
-	opacity:.75;
+	opacity:.65;
 	color:#fff;
 	height:50%;
-	text-align: center;
 }
+
+
 #slide4{
 	background: url(../images/beach2.jpeg)no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -66,9 +68,25 @@ h1{
 	-o-background-size: cover;
 	background-size: cover;
 }
+#slide4 div#contact{
+	background: #111;
+	opacity:.65;
+	color:#fff;
+	height:50%;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	font-size: 1em;
+	color:#fff;
+}
+p{
+	font-size: 1.25em;
+}
 .wrapper{
-	width: 80%;
+	width: 70%;
 	margin:0 auto;
+	padding: 8% 0;
 }
 #geekwise{
     background: #111;
