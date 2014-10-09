@@ -107,7 +107,23 @@ p{
 }
 
 @media and (max-width: 480px){
-	h1, h2, h3, p{
+	
+
+
+	h1, h2, h3, p, a{
 		font-size: 1em;
+	}
+	#slide4 div#contact{
+		height:100%;
+	}
+	#geekwise{
+	    width:100%;
+	    padding: 1%;
+	    float: none;
+	}
+	#teaching{
+		width:100%;
+		color:#fff;
+		float: none;
 	}
 }
