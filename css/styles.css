@@ -48,8 +48,6 @@ body{
 	opacity:.65;
 	color:#fff;
 }
-
-
 #slide4{
 	background: url(../images/beach2.jpeg)no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -57,11 +55,15 @@ body{
 	-o-background-size: cover;
 	background-size: cover;
 }
+#slide4 .fp-tableCell {
+	vertical-align: bottom;
+}
 #slide4 div#contact{
 	background: #111;
 	opacity:.65;
 	color:#fff;
 	text-align: center;
+	height:75%;
 }
 #padding{
 	padding: 1%;
